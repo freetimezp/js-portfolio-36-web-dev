@@ -1,4 +1,5 @@
 let navbar = document.querySelector('nav');
+let menuLinks = document.getElementById('menu-links');
 
 window.onscroll = function () {
     if (window.scrollY > 0) {
@@ -7,3 +8,7 @@ window.onscroll = function () {
         navbar.style.background = 'transparent';
     }
 };
+
+function toggleMenu() {
+    menuLinks.classList.toggle('show-menu');
+}
